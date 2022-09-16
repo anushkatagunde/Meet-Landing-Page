@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Sen", sans-serif;
+}
+
+h1 {
+  color: #32f5c8;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+h1 span:last-child {
+  margin-left: -0.8rem;
+}
+
+p {
+  color: #a5bac3;
+  max-width: 354px;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #a5bac3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #013243;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #32f5c8;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+button:hover {
+  background-color: #fff;
+}
+
+header,
+main,
+footer {
+  padding: 1rem;
+  z-index: 1;
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+}
+
+main > * {
+  margin-bottom: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  font-size: 1.2rem;
+}
+
+footer .image-wrapper {
+  margin-right: 1rem;
+}
+
+#image-1,
+#image-2,
+#image-3 {
+  position: absolute;
+}
+
+#image-4,
+#image-5,
+#image-6,
+#image-7 {
+  display: none;
+}
+
+#image-1 {
+  top: 70px;
+  left: 50px;
+}
+
+#image-1 img {
+  width: 80%;
+}
+
+#image-2 {
+  top: 50px;
+  right: 0px;
+}
+#image-2 {
+  width: 15%;
+}
+#image-3 {
+  bottom: 80px;
+  right: -35px;
+}
+
+#image-3 img {
+  width: 80%;
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h1:last-child {
+    margin-left: -0.8rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  button {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  #image-1 {
+    top: 55px;
+    left: 40px;
+  }
+  #image-1 img {
+    width: 60%;
+  }
+
+  #image-2 {
+    right: 0;
+  }
+  #image-2 img {
+    float: right;
+  }
+  #image-3 {
+    bottom: 43px;
+    right: -35px;
+  }
+
+  #image-3 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 376px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h1 span:last-child {
+    margin-left: -1rem;
+  }
+  #image-1 {
+    top: 55px;
+    left: 40px;
+  }
+  #image-1 img {
+    width: 60%;
+  }
+
+  #image-2 {
+    right: 0;
+  }
+  #image-2 img {
+    float: right;
+  }
+  #image-3 {
+    bottom: 43px;
+    right: -35px;
+  }
+
+  #image-3 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 426px) {
+  h1 {
+    font-size: 3.4rem;
+  }
+  h1 span:last-child {
+    margin-left: -1rem;
+  }
+  #image-1 {
+    top: 55px;
+    left: 40px;
+  }
+  #image-1 img {
+    width: 60%;
+  }
+
+  #image-2 {
+    right: 0;
+  }
+  #image-2 img {
+    float: right;
+  }
+  #image-3 {
+    bottom: 43px;
+    right: -35px;
+  }
+
+  #image-3 img {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 769px) {
+  header,
+  main,
+  footer {
+    padding: 2rem;
+  }
+  h1 {
+    margin-top: 45%;
+    font-size: 5em;
+  }
+  h1 span:last-child {
+    margin-left: -1.4rem;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  #image-4,
+  #image-5,
+  #image-6 {
+    display: block;
+    position: absolute;
+  }
+  #image-1 {
+    top: 15%;
+  }
+  #image-1 img {
+    width: 80%;
+  }
+  #image-2 {
+    right: 4rem;
+    top: 2rem;
+  }
+  #image-3 {
+    top: 69%;
+    right: 11rem;
+  }
+  #image-4 {
+    top: 40%;
+    right: 6.5rem;
+  }
+  #image-5 {
+    bottom: -15rem;
+    right: 4rem;
+  }
+  #image-6 {
+    top: 30%;
+    right: 35%;
+  }
+  footer {
+    bottom: -43%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1025px) {
+  body {
+    max-width: 800px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 7rem;
+    line-height: 6rem;
+  }
+  h1 span {
+    position: relative;
+  }
+  h1 span:first-child {
+    z-index: 0;
+  }
+  h1 span:last-child {
+    margin-left: -2rem;
+    z-index: 2;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 400px;
+  }
+  button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+  #image-4,
+  #image-5,
+  #image-6 {
+    display: flex;
+    position: absolute;
+  }
+  #image-1 {
+    top: 55px;
+    left: -59px;
+  }
+  #image-1 img {
+    width: 80%;
+  }
+  #image-2 {
+    right: -2rem;
+    top: 2rem;
+  }
+  #image-3 {
+    top: 43%;
+    right: 14rem;
+  }
+  #image-4 {
+    top: 41%;
+    right: -4.3rem;
+  }
+  #image-5 {
+    bottom: -7rem;
+    right: -3rem;
+  }
+  #image-6 {
+    top: 8%;
+    right: 20%;
+  }
+  footer {
+    bottom: -20%;
+  }
+}
+
+@media screen and (min-width: 1113px) {
+  body {
+    max-width: 1080px;
+  }
+  header,
+  main,
+  footer {
+    padding: 3rem 0 6rem 0;
+  }
+  h1 {
+    font-size: 9rem;
+    line-height: 8rem;
+    margin-top: 2rem;
+  }
+  h1 span {
+    position: relative;
+  }
+  h1 span:first-child {
+    z-index: 0;
+  }
+  h1 span:last-child {
+    margin-left: -2rem;
+    z-index: 2;
+  }
+  p {
+    font-size: 1.2rem;
+    max-width: 400px;
+  }
+  #image-1 {
+    left: -80px;
+  }
+  #image-2 {
+    top: 5%;
+    right: 10%;
+  }
+  #image-2 img {
+    float: right;
+    width: 85%;
+  }
+  #image-7 {
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 36%;
+    z-index: 1;
+  }
+  #image-7 img {
+    float: right;
+    width: 70%;
+  }
+  #image-7 img {
+    float: right;
+  }
+  #image-3 {
+    display: none;
+  }
+  #image-4,
+  #image-5,
+  #image-6 {
+    display: block;
+    position: absolute;
+  }
+  #image-4 {
+    top: 44%;
+    right: 1.5%;
+  }
+  #image-4 img {
+    float: right;
+    width: 80%;
+  }
+  #image-5 {
+    bottom: 5%;
+    right: 0;
+  }
+  #image-5 img {
+    width: 80%;
+    float: right;
+  }
+  #image-6 {
+    top: 10%;
+    right: 30%;
+  }
+  #image-6 img {
+    float: right;
+    width: 80%;
+  }
+  footer {
+    bottom: -2rem;
+    position: fixed;
+  }
+}
